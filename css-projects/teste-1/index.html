@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Psychological Registration Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">Psychological Registration Form</h1>
+        <p id="description">Thank you for taking the time to fill out this form</p>
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">Enter Your First Name<input id="name" type="text" required name="name" placeholder="Natan Rosa Leão Alkmim" /></label>
+                <label for="email" id="email-label">Enter Your Email<input id="email" type="email" required name="email" placeholder="natan.alkmim@gmail.com"/></label>
+                <label for="number" id="number-label">Enter Your Phone Number<input id="number" type="number" required name="number" min="9" max="30" placeholder="(31)xxxx-xxxxx"/></label>
+            </fieldset>
+            <fieldset>
+                <label for="dropdown">How did you hear about me?
+                    <select id="dropdown" name="dropdown-name">
+                        <option value="">(select one)</option>
+                        <option value="1">Instagram</option>
+                        <option value="2">LinkedIn</option>
+                        <option value="3">Indication</option>
+                        <option value="4">WhatsApp</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset id="weekly-or-biweekly">
+                <legend>What You Prefer?(required)</legend>
+                <label for="weekly"><input type="radio" name="account-type" id="weekly" class="inline" checked value="radio" />Weekly</label>
+                <label for="biweekly"><input type="radio" name="account-type" id="biweekly" class="inline" value="radio" />Biweekly</label>
+            </fieldset>
+            <fieldset id="checkbox">
+                <legend>What would you like to see improved?</legend>
+                <label for="checkbox"><input id="checkbox" type="checkbox" value="checkbox" class="inline"/>Depression</label>
+                <label for="checkbox"><input id="checkbox" type="checkbox" value="checkbox" class="inline"/>Anxiety</label>
+                <label for="checkbox"><input id="checkbox" type="checkbox" value="checkbox" class="inline"/>Trauma</label>
+                <label for="checkbox"><input id="checkbox" type="checkbox" value="checkbox" class="inline"/>Relationship</label>
+            </fieldset>
+            <fieldset>
+                <label for="bio">What's happening with you?
+                    <textarea id="bio" row="3" cols="30" name="bio"></textarea>
+                </label>
+            </fieldset>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required name="checkbox" class="inline" value="checkbox"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <input type="Submit" value="Submit" id="submit" />
+        </form>
+    </body>
+</html>
